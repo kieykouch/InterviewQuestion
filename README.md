@@ -35,3 +35,16 @@ def findallcommon2(l1,l2):
             IndexL2= IndexL2+1
     return Result
 ```
+### Given unsorted array (n size), find all largest different (arr[j] - arr[i]) where arr[i] < arr[j].
+keep track of the lowest value as min, and only store the largest different if it can better value when subtract to the min and current largest different. O(n)
+```python
+a = [40, 60, 20, 85, 66, 10, 120]
+def maxProfit(lst):
+    maxvalue = float("-inf")
+    minvalue = float("inf")
+    for integer in lst:
+        if integer < minvalue:
+            minvalue = integer
+        maxvalue = max(maxvalue, integer-minvalue)
+    return maxvalue
+```
