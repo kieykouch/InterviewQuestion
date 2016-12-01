@@ -21,7 +21,7 @@ def ValidateBrace(Word):
 
 ```
 ### Check if 2 lists same length have the anagram for each word
-iterate the word, sorted it in lowercase, then compare both
+iterate the 2 lists at the same, sorted each words in lowercase, then compare both
 ```python
 def AnagramValidation(list1, list2):
     for List1Word, List2Word in zip(list1, list2):
