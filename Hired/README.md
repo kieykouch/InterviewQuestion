@@ -1,4 +1,4 @@
-# Hire Sign Up Challenges
+# Hired.com Sign Up Challenges
 
 ### Check if the Braces is Valid, print 0 for invalid, 1 for valid.
 Stack the open bracket. if the close appears, pop for the list, compare it, if it is not its pair, consider this string has invalid brace format.
