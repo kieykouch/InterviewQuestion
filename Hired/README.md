@@ -20,3 +20,25 @@ def ValidateBrace(Word):
     print(1)
 
 ```
+### Check if 2 lists same length have the anagram for each word
+iterate the word, sorted it in lowercase, then compare both
+```python
+def AnagramValidation(list1, list2):
+    for List1Word, List2Word in zip(list1, list2):
+        if len(List1Word) != len(List2Word):
+            print("" + List1Word + " is not Anagram with "+List2Word)
+            continue
+        if sorted(List1Word.lower()) != sorted(List2Word.lower()):
+            print("" + List1Word + " is not Anagram with "+List2Word)
+        else:
+            print("" + List1Word + " is Anagram with "+List2Word)
+
+def AnagramValidation2(list1, list2):
+    print ([sorted(List1Word.lower()) == sorted(List2Word.lower()) for List1Word, List2Word in zip(list1, list2)])
+    
+a = ['cinema','host','aab','train']
+b = ['iceman', 'shot', 'bab', 'rain']
+AnagramValidation(a, b)
+#AnagramValidation2(a, b)
+
+```
